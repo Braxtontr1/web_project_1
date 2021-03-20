@@ -11,7 +11,7 @@
 
 <body>
   <div class="page">
-    <header class="header">
+    <header class="header flex-row">
       <img class="logo logo_place_header" src="./images/logo_place_header.png" alt="Practicum logo">
       <h1 class="header__title">Learning how to learn</h1>
       <div class="header__subtitle">
@@ -25,9 +25,10 @@
       <div class="header__square-pic"></div>
     </header>
     <main class="content">
-      <section class="description two__columns">
+      <section class="description">
+        <div class="two-columns flex-row">
         <h2 class="two-columns__brief_header">The main problem with education</h2>
-        <article class="two-columns__main-text">
+        <article class="two-columns__main-text flex-column">
           <p class="two-columns__text">Whether it's at school or university, the one thing no one ever
             teaches you is how to teach yourself. All you actually do is memorize information in order to regurgitate
             when you take the test. You get drilled on how to solve specific exercises so that while you know exactly
@@ -42,13 +43,14 @@
           <p class="two-columns__text">There are certain techniques and exercises that can be applied to
             the learning process to help make it
             more efficient and engaging. This is exactly what we do at Practicum.</p>
-          </article>
+        </article>
+      </div>
       </section>
 
       <section class="digits">
-        <h2 class="section-title section-title_theme_light">Facts and figures</h2>
-        <h3 class="section-subtitle">On learning and the brain</h3>
-        <div class="table">
+        <h2 class="section-title flex-row">Facts and figures</h2>
+        <h3 class="section-subtitle flex-row">On learning and the brain</h3>
+        <div class="table flex-row">
           <div class="table__cell table__cell_theme_light">
             <h4 class="table__heading">86 billion</h4>
             <p class="table__text">the number of neurons in the human brain</p>
@@ -86,7 +88,7 @@
         </div>
       </section>
 
-      <section class="feynman">
+      <section class="feynman flex-column">
         <div class="feynman__image"></div>
         <h2 class="feynman__title">The Feynman Technique</h2>
         <h3 class="feynman__subtitle">Learn without forgetting</h3>
@@ -94,9 +96,9 @@
       </section>
 
       <section class="kaufman">
-        <h2 class="section-title section-title_theme_dark">Ten principles of rapid skill acquisition</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">by Josh kaufman</h3>
-        <div class="table table_theme_dark">
+        <h2 class="section-title section-title_theme_dark flex-row">Ten principles of rapid skill acquisition</h2>
+        <h3 class="section-subtitle section-subtitle_theme_dark flex-row">by Josh kaufman</h3>
+        <div class="table table_theme_dark flex-row">
           <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme-dark">Choose a lovable project.</p>
@@ -143,24 +145,24 @@
     </main>
     <footer class="footer">
       <div class="footer__column">
-        <div class="footer__column_copyright">
+        <div class="footer__column_copyright flex-column">
           <img class="logo logo_place_footer" src="./images/logo_place_footer.png" alt="Practicum logo">
           <p class="footer__author">&#169 2021. Braxton Trone</p>
         </div>
         <div class="footer__column_info">
           <h4 class="footer__column-heading">About Practicum by Yandex</h4>
-          <div class="footer__column-links">
+          <div class="footer__column-links flex-column">
             <a class="footer__column-links_text" href="#">Home Page</a>
             <a class="footer__column-links_text" href="#">Concept</a>
             <a class="footer__column-links_text" href="#">Mentors</a>
-        </div>
+          </div>
         </div>
         <div class="footer__column_social">
           <h4 class="footer__column-heading">Social media</h4>
-          <div class="footer__column-links">
-          <a class="footer__column-links_text" href="#"> <img src="./images/facebook_color_white.svg" alt="facebook logo"> Facebook</a>
-          <a class="footer__column-links_text" href="#"> <img src="./images/instagram_color_white.svg" alt="instagram logo"> Instagram</a>
-        </div>
+          <div class="footer__column-links flex-column">
+            <a class="footer__column-links_text" href="#"> <img src="./images/facebook_color_white.svg" alt="facebook logo"> Facebook</a>
+            <a class="footer__column-links_text" href="#"> <img src="./images/instagram_color_white.svg" alt="instagram logo"> Instagram</a>
+          </div>
         </div>
       </div>
     </footer>
