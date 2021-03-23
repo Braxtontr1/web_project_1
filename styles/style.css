@@ -16,6 +16,8 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  align-items: center;
+  z-index: 1;
   /* parameters for the header section */
 }
 
@@ -32,15 +34,13 @@
 }
 
 .header__title {
-  display: flex;
-  align-items: center;
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
   margin: 0;
   padding-left: 64px;
-  z-index: 1;
+
 }
 
 .header__subtitle {
@@ -70,7 +70,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -81,6 +81,7 @@
   background-color: #2f80ed;
   right: 0;
   top: 64px;
+  z-index: -2;
 }
 
 .description {
@@ -274,7 +275,7 @@
   color: white;
 }
 
-.footer__column {
+.footer__columns {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -286,9 +287,12 @@
   width: 183px;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
@@ -301,16 +305,6 @@
   padding: 18px 0;
 }
 
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer__column-heading {
   margin: 0;
   padding-bottom: 20px;
@@ -320,14 +314,20 @@
 }
 
 .footer__column-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 16px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__column-link {
   color: white;
   text-decoration: none;
   font-weight: normal;
   line-height: 30px;
   font-size: 18px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__social-icon {
